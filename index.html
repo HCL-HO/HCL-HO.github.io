@@ -62,16 +62,18 @@
                     <!-- Portfolio Items-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <!-- <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img style="width: 400px; height: 640px" class="img-fluid" src="assets/img/portfolio/pos17a.gif" alt="Pos17a APP"/>
+                            </div> -->
+                            <img style="width: 400px; height: 640px" class="img-fluid gif" src="assets/img/portfolio/pos17a_still.png" alt="Pos17a APP"/>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <!-- <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img style="width: 400px; height: 640px" class="img-fluid" src="assets/img/portfolio/quotato.gif" alt="QUOTATO"/>
+                            </div> -->
+                            <img style="width: 400px; height: 640px" class="img-fluid gif" src="assets/img/portfolio/quotato_still.png" alt="QUOTATO"/>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
@@ -83,16 +85,18 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal_weather">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <!-- <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img style="width: 400px; height: 640px" class="img-fluid" src="https://github.com/HCL-HO/WeatherDemoKt/blob/main/weather.gif?raw=true" alt="Weather APP"/>
+                            </div> -->
+                            <img style="width: 400px; height: 640px" class="img-fluid gif" src="assets/img/portfolio/weather_still.png" alt="Weather APP"/>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <!-- <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img style="width: 400px; height: 640px" class="img-fluid" src="assets/img/portfolio/albumdemo.gif" alt="albumdemo"/>
+                            </div> -->
+                            <img style="width: 400px; height: 640px" class="img-fluid gif" src="assets/img/portfolio/album_still.png" alt="albumdemo"/>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
@@ -104,9 +108,10 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <!-- <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img style="width: 400px; height: 640px" class="img-fluid" src="assets/img/portfolio/ebsl.gif" alt="MFMS APP"/>
+                            </div> -->
+                            <img style="width: 400px; height: 640px" class="img-fluid gif" src="assets/img/portfolio/ebsl_still.png" alt="MFMS APP"/>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
@@ -375,7 +380,7 @@
                                       <p class="mb-5">Android App fetching and displaying data using MVVM pattern. This is an App I built for a job interview assessment</p>
                                     <!-- Portfolio Modal - Image-->
                                     <div class="img-fluid rounded mb-5">
-                                        <img style="max-width: 400px; max-height: 640px"  src="assets/img/portfolio/albumdemo.gif" alt="Circus Tent"/>
+                                        <img style="max-width: 400px; max-height: 640px"  src="assets/img/portfolio/album.gif" alt="Circus Tent"/>
                                     </div>
                                   
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
@@ -462,5 +467,31 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+            $(function() {
+                $(".gif").hover(
+                    function() {
+                        var src = $(this).attr ("src")
+                        if(src.indexOf("weather")> -1){
+                            var newAttr = "https://github.com/HCL-HO/WeatherDemoKt/blob/main/weather.gif?raw=true"
+                            $(this).attr("src", newAttr);
+                        } else {
+                            var newAttr = src.replace('_still.png', '.gif')
+                            $(this).attr("src", newAttr);
+                        }
+                    },
+                    function() {
+                        var src = $(this).attr ("src")
+                        if(src.indexOf("weather")> -1){
+                            var newAttr = "assets/img/portfolio/weather_still.png"
+                            $(this).attr("src", newAttr);
+                        } else {
+                            var newAttr = src.replace('.gif', '_still.png')
+                            $(this).attr("src", newAttr);
+                        }
+                    }                         
+                );                  
+            });
+        </script>
     </body>
 </html>
