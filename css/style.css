@@ -193,14 +193,18 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header .display-tc h3,
 .fh5co-cover .display-tc h3 {
-  font-size: 16px;
+  /* CR-0404: the role line is now the page's claim, not a subtitle, so it takes 20px
+     (16px made a single 604 px line in a 616 px box — one font hiccup from wrapping).
+     At 20px it wraps deliberately, on two lines, at every width measured. */
+  font-size: 20px;
+  line-height: 1.5;
   /* CR-0403 B: same deep warm ink so the role line clears 4.5:1 on the beige field. */
   color: #3b2a1b;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h3,
   .fh5co-cover .display-tc h3 {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 #fh5co-header .display-tc .profile-thumb,
@@ -605,6 +609,37 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .timeline-body > p + p {
   margin-top: 5px;
+}
+
+/* CR-0404 §2.3: the Certifications panel is a plain list of names in the timeline panel
+   the template already draws for every entry — no new colours, no new type scale. The
+   checkmark is decoration; the name carries the meaning. */
+.cert-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cert-list > li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 8px;
+  color: #2F3C4F;
+}
+.cert-list > li:last-child {
+  margin-bottom: 0;
+}
+.cert-list > li > i {
+  position: absolute;
+  top: 0.35em;
+  left: 0;
+  font-size: 12px;
+  color: #2F3C4F;
+}
+@media screen and (max-width: 480px) {
+  .cert-list > li {
+    padding-left: 20px;
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 992px) {
