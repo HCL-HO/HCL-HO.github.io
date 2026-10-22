@@ -867,6 +867,48 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
+/* CR-0407: the six project cards carry NO screenshot — the sponsor keeps the
+   apps' own screens off the public page. The stage is the employer cards' own
+   white card and equal height; each card says what the app is for, then what
+   building it with AI took. Nothing here is an image slot. */
+.work-card--note .desc {
+  text-align: center;
+  padding: 26px 22px;
+}
+.work-card--note .desc h3 {
+  margin: 0 0 10px;
+}
+.work-card--note .purpose {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #3f4756;
+  margin: 0;
+}
+.work-card--note .built-label {
+  margin: 18px 0 6px;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #a8937a;
+}
+.work-card--note .built {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #6b7280;
+  margin: 0 0 8px;
+}
+.work-card--note .built strong {
+  color: #3f4756;
+}
+
+/* CR-0407: the Work band is the beige field of CR-0406, so the new lead-in line
+   takes that band's ink — the template's grey would sit at ~2:1 on it. */
+#fh5co-work .fh5co-heading p {
+  color: #4a3728;
+  font-size: 17px;
+  margin: 0;
+}
+
 #fh5co-started {
   background-size: cover;
   background-position: center center;
