@@ -41,6 +41,33 @@
 
 	var contentWayPoint = function() {
 		var i = 0;
+		// CR-0403 A: content is visible by default (see css/style.css) and the fade is only
+		// an enhancement. Boxes already on screen at load are left alone — animating them
+		// would flash something the reader is already reading. Boxes below the fold are
+		// armed with `will-fade` (opacity 0) and fade in when their waypoint fires. With
+		// main.js missing or failing, nothing is armed, so nothing is hidden.
+		if ( typeof $.fn.waypoint === 'function' ) {
+			var viewportHeight = $(window).height();
+			$('.animate-box').each(function() {
+				if ( this.getBoundingClientRect().top < viewportHeight ) {
+					$(this).addClass('animated-fast');
+				} else {
+					$(this).addClass('will-fade');
+				}
+			});
+			// A deep link can put a box in view after it was armed. Reveal anything that is
+			// on screen at load or after a hash jump, so no reader meets an empty section.
+			var revealInView = function() {
+				var vh = $(window).height();
+				$('.animate-box.will-fade').each(function() {
+					var box = this.getBoundingClientRect();
+					if ( box.top < vh && box.bottom > 0 ) {
+						$(this).removeClass('will-fade').addClass('fadeInUp animated-fast');
+					}
+				});
+			};
+			$(window).on('load hashchange', revealInView);
+		}
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
@@ -64,7 +91,7 @@
 								el.addClass('fadeInUp animated-fast');
 							}
 
-							el.removeClass('item-animate');
+							el.removeClass('item-animate will-fade');
 						},  k * 100, 'easeInOutExpo' );
 					});
 					
