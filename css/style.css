@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: rgba(223, 191, 159, 0.9);
 }
 #fh5co-features h2 {
-  color: #fff;
+  color: #3b2a1b;
 }
 #fh5co-features .services-padding {
   padding: 7em 0;
@@ -275,11 +275,11 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-features .feature-left h3 {
   font-size: 24px;
   font-weight: 400;
-  color: #fff;
+  color: #3b2a1b;
 }
 #fh5co-features .feature-left p {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #4a3728;
 }
 #fh5co-features .feature-left p:last-child {
   margin-bottom: 0;

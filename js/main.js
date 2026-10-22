@@ -104,6 +104,40 @@
 
 
 
+	// CR-0406 §2.3: the fade is an enhancement, so a waypoint that never fires must never leave
+	// a section blank. Three seconds after load, anything still armed (opacity 0) is revealed
+	// with the same fade. A stubbed, blocked or failing waypoint plugin lands here.
+	var revealFailsafe = function() {
+
+		var revealHidden = function() {
+			$('.animate-box.will-fade').each(function() {
+				var el = $(this);
+				var effect = el.data('animate-effect');
+				if ( effect === 'fadeIn' ) {
+					el.addClass('fadeIn');
+				} else if ( effect === 'fadeInLeft' ) {
+					el.addClass('fadeInLeft');
+				} else if ( effect === 'fadeInRight' ) {
+					el.addClass('fadeInRight');
+				} else {
+					el.addClass('fadeInUp');
+				}
+				el.addClass('animated-fast').removeClass('will-fade');
+			});
+		};
+
+		var startTimer = function() {
+			setTimeout(revealHidden, 3000);
+		};
+
+		if ( document.readyState === 'complete' ) {
+			startTimer();
+		} else {
+			$(window).on('load', startTimer);
+		}
+	};
+
+
 	var goToTop = function() {
 
 		$('.js-gotop').on('click', function(event){
@@ -164,6 +198,7 @@
 	
 	$(function(){
 		contentWayPoint();
+		revealFailsafe();
 		goToTop();
 		loaderPage();
 		fullHeight();
