@@ -1,0 +1,41 @@
+{
+  "schema": "design-theme-record/1",
+  "project": "joblanding",
+  "status": "BASELINE \u2014 the app's existing look; the sponsor signs it off before it is cited as evidence",
+  "recorded": "2026-10-22",
+  "provenance": {
+    "kind": "existing-look",
+    "reference": null,
+    "note": "Drafted from the app's real CSS: /Users/ehocl/Documents/deepseek harneess/aiagent/uiux-designer-agent/evidence/joblanding2/baseline-tokens.css on 2026-10-22. No order was declared; the recorded values do not depend on one. This is the 'before' a change is checked against."
+  },
+  "tokens": {
+    "colour": {
+      "--color-text": "#4d4d4d",
+      "--color-bg": "#fff",
+      "--color-link": "rgba(223, 191, 159, 0.9)",
+      "--color-heading": "#000",
+      "--color-accent": "rgba(223, 191, 159, 0.9)",
+      "--color-dark": "#2F3C4F",
+      "--color-heading-navy": "rgba(40, 48, 107, 0.809)",
+      "--color-muted": "#828282",
+      "--color-badge-green": "rgba(159, 189, 158, 0.827)",
+      "--color-company": "#bfbfbf",
+      "--color-work-caption": "#999999",
+      "--color-timeline-rule": "#e6e6e6"
+    },
+    "type_scale": {
+      "--font-body": "\"Space Mono\", Arial, serif",
+      "--font-script": "\"Kaushan Script\", cursive",
+      "--font-size-body": "16px",
+      "--line-height-body": "1.7",
+      "--font-size-h1": "50px",
+      "--font-size-h2": "40px"
+    },
+    "spacing": {},
+    "radius": {
+      "--radius-portrait": "50%"
+    },
+    "elevation": {},
+    "motion": {}
+  }
+}

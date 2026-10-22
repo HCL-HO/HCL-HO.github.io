@@ -1,228 +1,424 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ho Chi Lung — System Analyst who ships AI products</title>
-<meta name="description" content="Ho Chi Lung, system analyst in Hong Kong. Six shipped AI products, 3,450+ automated checks, eight years of Java and Oracle banking backends.">
-<meta name="color-scheme" content="dark">
-<link rel="icon" href="data:,">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<a class="skip-link" href="#main">Skip to content</a>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ho Chi Lung &mdash; System Analyst, Backend Engineering &amp; AI-Driven Solutions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Ho Chi Lung, System Analyst in Hong Kong. Eight years of Java and Oracle banking backends, six shipped apps, 3,450+ automated checks behind them." />
+	<meta name="keywords" content="Ho Chi Lung, system analyst, Java Spring Boot, Oracle, PL/SQL, NLP, Flutter, Android, Angular, Hong Kong" />
+	<meta name="author" content="Ho Chi Lung" />
 
-<header class="site-header">
-  <div class="wrap header-inner">
-    <p class="brand"><span class="brand-name">Ho Chi Lung</span><span class="brand-role">System Analyst</span></p>
-    <nav class="site-nav" aria-label="Sections">
-      <a href="#proof">Proof</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Ho Chi Lung &mdash; System Analyst"/>
+	<meta property="og:image" content="https://hcl-ho.github.io/images/profile.jpg"/>
+	<meta property="og:url" content="https://hcl-ho.github.io/"/>
+	<meta property="og:site_name" content="Ho Chi Lung"/>
+	<meta property="og:description" content="Eight years of Java and Oracle banking backends, six shipped apps, 3,450+ automated checks behind them."/>
+	<meta name="twitter:title" content="Ho Chi Lung &mdash; System Analyst" />
+	<meta name="twitter:image" content="https://hcl-ho.github.io/images/profile.jpg" />
+	<meta name="twitter:url" content="https://hcl-ho.github.io/" />
+	<meta name="twitter:card" content="summary" />
 
-<main id="main" tabindex="-1">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="wrap">
-      <p class="eyebrow">System Analyst · Hong Kong</p>
-      <h1 id="hero-title">Ho Chi Lung</h1>
-      <p class="pitch">Eight years of Java and Oracle backends, six complete AI products shipped — each with real users, a real database and a test suite that measures it.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="mailto:clhoac@gmail.com">Email me</a>
-        <a class="btn btn-ghost" href="#proof">See what I shipped</a>
-      </div>
-      <ul class="stats">
-        <li class="stat"><span class="stat-value">6</span><span class="stat-label">shipped apps</span></li>
-        <li class="stat"><span class="stat-value">3,450+</span><span class="stat-label">automated checks</span></li>
-        <li class="stat"><span class="stat-value">8+ years</span><span class="stat-label">backend engineering</span></li>
-      </ul>
-    </div>
-  </section>
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-  <section id="proof" class="section" aria-labelledby="proof-title">
-    <div class="wrap">
-      <p class="eyebrow">Proof</p>
-      <h2 id="proof-title">Six products, six measured numbers</h2>
-      <p class="section-intro">Each number is the size of that project&rsquo;s automated test suite. Six shipped apps, 3,450+ automated checks in total.</p>
-      <ul class="cards">
-        <li class="card">
-          <h3>jobsearch</h3>
-          <p class="card-number"><span class="num">1,842</span><span class="num-label">automated checks</span></p>
-          <p class="card-line">Scheduled board search, LLM scoring and generated application packs.</p>
-        </li>
-        <li class="card">
-          <h3>jobsearch-mobile</h3>
-          <p class="card-number"><span class="num">12</span><span class="num-label">shipped builds</span></p>
-          <p class="card-line">The same product on Android, wrapped around the web app with a native bridge.</p>
-        </li>
-        <li class="card">
-          <h3>investintelligent</h3>
-          <p class="card-number"><span class="num">990</span><span class="num-label">automated checks</span></p>
-          <p class="card-line">Many news sources in, LLM analysis out; alerts and briefings on top.</p>
-        </li>
-        <li class="card">
-          <h3>examcoach</h3>
-          <p class="card-number"><span class="num">75+</span><span class="num-label">automated checks</span></p>
-          <p class="card-line">Exam papers and cheat sheets generated from a syllabus.</p>
-        </li>
-        <li class="card">
-          <h3>aiacademy</h3>
-          <p class="card-number"><span class="num">225</span><span class="num-label">automated checks</span></p>
-          <p class="card-line">Turns any topic into illustrated study notes with diagrams.</p>
-        </li>
-        <li class="card">
-          <h3>MindCare</h3>
-          <p class="card-number"><span class="num">319</span><span class="num-label">automated checks</span></p>
-          <p class="card-line">A long-form chat companion with memory, summaries and safe fallbacks.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-  <section id="experience" class="section" aria-labelledby="experience-title">
-    <div class="wrap">
-      <p class="eyebrow">Experience</p>
-      <h2 id="experience-title">Where I have worked</h2>
-      <h3 class="group-title">Roles</h3>
-      <ol class="timeline">
-        <li class="job">
-          <p class="job-dates">Feb 2024 – Present</p>
-          <div class="job-body">
-            <h4>System Analyst</h4>
-            <p class="job-org">HKBEA</p>
-            <p class="job-line">Owned production stability for a 150,000+ user core banking system in Java Spring Boot and Oracle; studied NLP anomaly detection on its error logs.</p>
-          </div>
-        </li>
-        <li class="job">
-          <p class="job-dates">Sep 2021 – Feb 2024</p>
-          <div class="job-body">
-            <h4>Contract Analyst Programmer</h4>
-            <p class="job-org">EMSD (HK Government)</p>
-            <p class="job-line">Led a Flutter mobile app used by 1,000+ users from requirements to release; maintained an Android job management system.</p>
-          </div>
-        </li>
-        <li class="job">
-          <p class="job-dates">Jan 2021 – Sep 2021</p>
-          <div class="job-body">
-            <h4>Mobile Application Developer</h4>
-            <p class="job-org">Property Raptor</p>
-            <p class="job-line">Architected Android apps with clean code and third-party API integrations.</p>
-          </div>
-        </li>
-        <li class="job">
-          <p class="job-dates">Apr 2019 – Sep 2020</p>
-          <div class="job-body">
-            <h4>Contract Analyst Programmer</h4>
-            <p class="job-org">Hong Kong Post Office</p>
-            <p class="job-line">Delivered a 5,000-user reimbursement web app in Angular and Java; coordinated e-cert and Octopus upgrades across departments.</p>
-          </div>
-        </li>
-        <li class="job">
-          <p class="job-dates">Sep 2018 – Apr 2019</p>
-          <div class="job-body">
-            <h4>Analyst Programmer</h4>
-            <p class="job-org">HK Asian Ark Ltd.</p>
-            <p class="job-line">Contributed to a mobile MVP, a UI revamp and offshore collaboration.</p>
-          </div>
-        </li>
-        <li class="job">
-          <p class="job-dates">Nov 2017 – Sep 2018</p>
-          <div class="job-body">
-            <h4>Programmer</h4>
-            <p class="job-org">E-Business Solution Ltd.</p>
-            <p class="job-line">Developed mobile apps and researched React Native for modernisation.</p>
-          </div>
-        </li>
-        <li class="job">
-          <p class="job-dates">Nov 2016 – Jun 2017</p>
-          <div class="job-body">
-            <h4>Contract Junior Programmer</h4>
-            <p class="job-org">Department of Health</p>
-            <p class="job-line">Built Java and PL-SQL modules for the e-Health System; wrote test plans and documentation.</p>
-          </div>
-        </li>
-        <li class="job">
-          <p class="job-dates">Jul 2015 – Sep 2016</p>
-          <div class="job-body">
-            <h4>Operation Officer (Customer Service)</h4>
-            <p class="job-org">Hong Kong Airport Authority</p>
-            <p class="job-line">Provided multinational customer service at the airport.</p>
-          </div>
-        </li>
-      </ol>
+	<!-- The template hides this loader with JavaScript; without JavaScript it would cover the page. -->
+	<noscript><style>.fh5co-loader{display:none}</style></noscript>
 
-      <h3 class="group-title">Education</h3>
-      <ol class="timeline">
-        <li class="job">
-          <p class="job-dates">2023 – 2025</p>
-          <div class="job-body">
-            <h4>MSc Information Technology (Natural Language Processing)</h4>
-            <p class="job-org">Polytechnic University of Hong Kong</p>
-          </div>
-        </li>
-        <li class="job">
-          <p class="job-dates">2014</p>
-          <div class="job-body">
-            <h4>BSc Chemistry</h4>
-            <p class="job-org">Hong Kong University of Science and Technology</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">	
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+							<div class="profile-thumb" role="img" aria-label="Portrait of Ho Chi Lung" style="background: url(images/profile.jpg);"></div>
+							<h1><span>Ho Chi Lung</span></h1>
+							<h3><span>System Analyst &mdash; Backend Engineering &amp; AI-Driven Solutions</span></h3>
+							<p>
+								<ul class="fh5co-social-icons">
+									<li><a href="https://github.com/HCL-HO" rel="noopener" aria-label="GitHub profile"><i class="icon-github" aria-hidden="true"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/eric-ho-319579140/" rel="noopener" aria-label="LinkedIn profile"><i class="icon-linkedin2" aria-hidden="true"></i></a></li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-  <section id="skills" class="section" aria-labelledby="skills-title">
-    <div class="wrap">
-      <p class="eyebrow">Skills</p>
-      <h2 id="skills-title">What I work with</h2>
-      <dl class="skills">
-        <div class="skill">
-          <dt>AI &amp; NLP</dt>
-          <dd>NLP, transformers and recommender systems from a Master&rsquo;s, applied to log analysis and document search.</dd>
-        </div>
-        <div class="skill">
-          <dt>Languages &amp; data</dt>
-          <dd>Python, Java Spring Boot, PL/SQL and SQL.</dd>
-        </div>
-        <div class="skill">
-          <dt>Web &amp; mobile</dt>
-          <dd>REST APIs, Angular, Flutter, React Native and Android SDK.</dd>
-        </div>
-        <div class="skill">
-          <dt>Platforms</dt>
-          <dd>Oracle DB and production support for 150,000+ user systems.</dd>
-        </div>
-        <div class="skill">
-          <dt>Delivery</dt>
-          <dd>Agile/Scrum, vendor management, stakeholder management and end-to-end project delivery.</dd>
-        </div>
-      </dl>
-    </div>
-  </section>
+	<div id="fh5co-about" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>About Me</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="info">
+						<li><span class="first-block">Full Name:</span><span class="second-block">Ho Chi Lung</span></li>
+						<li><span class="first-block">Phone:</span><span class="second-block"><a href="tel:+85267070831" style="color: #2F3C4F; text-decoration: underline;">+852 67070831</a></span></li>
+						<li><span class="first-block">Email:</span><span class="second-block"><a href="mailto:clhoac@gmail.com" style="color: #2F3C4F; text-decoration: underline;">clhoac@gmail.com</a></span></li>
+						<li><span class="first-block">Location:</span><span class="second-block">Hong Kong, China</span></li>
+					</ul>
+				</div>
+				<div class="col-md-8">
+					<h2>Hello There!</h2>
+					<p>System Analyst with 8+ years of backend engineering experience, currently bridging traditional banking systems (Java/Oracle) with emerging AI capabilities through a Master's in Information Technology (Natural Language Processing).</p>
+					<p>Strong track record of production stability, vendor management, and translating business pain points into technical roadmaps &mdash; most recently owning production stability for a 150,000+ user core banking system in Java Spring Boot and Oracle.</p>
+					<p>Actively seeking to apply academic AI knowledge (NLP, transformers, recommendation systems) to real-world financial data and automation challenges.</p>
+					<p>I have also shipped six apps of my own, with 3,450+ automated checks behind them.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <section id="contact" class="section" aria-labelledby="contact-title">
-    <div class="wrap">
-      <p class="eyebrow">Contact</p>
-      <h2 id="contact-title">Let&rsquo;s talk</h2>
-      <p class="section-intro">Looking for work where NLP meets financial data. Email is the fastest way to reach me.</p>
-      <p class="contact-email"><a href="mailto:clhoac@gmail.com">clhoac@gmail.com</a></p>
-      <ul class="contact-list">
-        <li><span class="contact-label">Phone</span><a href="tel:+85267070831">+852 67070831</a></li>
-        <li><span class="contact-label">Location</span><span>Hong Kong, China</span></li>
-      </ul>
-    </div>
-  </section>
+	<div id="fh5co-resume" class="fh5co-bg-color">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>My Resume</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline">
+						<li class="timeline-heading text-center animate-box">
+							<div><h3>Work Experience</h3></div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase" aria-hidden="true"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">System Analyst</h3>
+									<span class="company">HKBEA - Feb 2024 - Present</span>
+								</div>
+								<div class="timeline-body">
+									<p>Owned production stability for a 150,000+ user core banking system (Java Spring Boot + Oracle), reducing high-severity incidents through rapid root-cause analysis and permanent code fixes.</p>
+									<p>Researched NLP-based anomaly detection on the OBDX platform's error logs, and acted as the technical bridge between business stakeholders and offshore/vendor teams.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-suitcase" aria-hidden="true"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Contract Analyst Programmer</h3>
+									<span class="company">EMSD (HK Government) - Sep 2021 - Feb 2024</span>
+								</div>
+								<div class="timeline-body">
+									<p>Led the full lifecycle of a Flutter mobile app with 1,000+ users, and maintained an Android job management system with systematic testing and user feedback.</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase" aria-hidden="true"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Mobile Application Developer</h3>
+									<span class="company">Property Raptor - Jan 2021 - Sep 2021</span>
+								</div>
+								<div class="timeline-body">
+									<p>Architected Android apps with clean code and third-party API integrations.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-suitcase" aria-hidden="true"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Contract Analyst Programmer</h3>
+									<span class="company">Hong Kong Post Office - Apr 2019 - Sep 2020</span>
+								</div>
+								<div class="timeline-body">
+									<p>Managed end-to-end delivery of a 5,000-user reimbursement web app (Angular + Java), and coordinated critical e-cert and Octopus upgrades across departments.</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase" aria-hidden="true"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Analyst Programmer</h3>
+									<span class="company">HK Asian Ark Ltd. - Sep 2018 - Apr 2019</span>
+								</div>
+								<div class="timeline-body">
+									<p>Contributed to a mobile MVP, a UI revamp and offshore collaboration.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-suitcase" aria-hidden="true"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Programmer</h3>
+									<span class="company">E-Business Solution Ltd. - Nov 2017 - Sep 2018</span>
+								</div>
+								<div class="timeline-body">
+									<p>Developed mobile apps and researched React Native.</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase" aria-hidden="true"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Contract Junior Programmer</h3>
+									<span class="company">Department of Health - Nov 2016 - Jun 2017</span>
+								</div>
+								<div class="timeline-body">
+									<p>Developed Java/PL-SQL modules for the e-Health System, and prepared test plans and documentation.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-suitcase" aria-hidden="true"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Operation Officer (Customer Service)</h3>
+									<span class="company">Hong Kong Airport Authority - Jul 2015 - Sep 2016</span>
+								</div>
+								<div class="timeline-body">
+									<p>Provided multinational customer service &mdash; strong communication and stakeholder handling.</p>
+								</div>
+							</div>
+						</li>
+						<br>
+						<li class="timeline-heading text-center animate-box">
+							<div><h3>Education</h3></div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-graduation-cap" aria-hidden="true"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Master of Science in Information Technology<br>(Natural Language Processing)</h3>
+									<span class="company">Polytechnic University of Hong Kong - 2023 - 2025</span>
+								</div>
+								<div class="timeline-body">
+									<p>Capstone: fine-tuning with transfer learning, document search with LSH, recommender systems, and image enhancement with computer vision.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap" aria-hidden="true"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Bachelor of Science<br>in Chemistry</h3>
+									<span class="company">Hong Kong University of Science and Technology - 2014</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
-</main>
+	<div id="fh5co-features" class="animate-box">
+		<div class="container">
+			<div class="services-padding">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>My Service</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-database" aria-hidden="true"></i>
+							</span>
+							<div class="feature-copy">
+								<h3 class="text-center">Backend Engineering</h3>
+								<p>Java Spring Boot and Oracle behind a 150,000+ user core banking system: production stability, root-cause analysis and permanent code fixes.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-lab" aria-hidden="true"></i>
+							</span>
+							<div class="feature-copy">
+								<h3 class="text-center">AI Product Delivery</h3>
+								<p>Six shipped apps with LLM scoring, generated briefings and study notes, each one backed by its own automated test suite.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-mobile" aria-hidden="true"></i>
+							</span>
+							<div class="feature-copy">
+								<h3 class="text-center">Mobile &amp; Data</h3>
+								<p>Flutter and Android apps for 1,000+ users, plus the SQL analysis that turns recurring failures into preventative fixes.</p>
+							</div>
+						</div>
+					</div>
+					</div>
+			</div>
+		</div>
+	</div>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <p>Ho Chi Lung · Hong Kong · Static page: no trackers, no cookies, no external requests.</p>
-  </div>
-</footer>
+	<div id="fh5co-skills" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Skills</h2>
+				</div>
+			</div>
+			<div class="row row-pb-md">
+				<div class="col-md-6">
+					<h3>Backend &amp; data</h3>
+					<p>Java Spring Boot, Oracle DB, PL/SQL, REST APIs.</p>
+				</div>
+				<div class="col-md-6">
+					<h3>AI &amp; NLP</h3>
+					<p>Python; NLP research from a Master's (2023&ndash;2025): transfer learning, document search with LSH, recommender systems.</p>
+				</div>
+				<div class="col-md-6">
+					<h3>Mobile &amp; web</h3>
+					<p>Flutter, React Native, Android SDK, Angular.</p>
+				</div>
+				<div class="col-md-6">
+					<h3>Delivery</h3>
+					<p>Vendor management, production support, Agile/Scrum, stakeholder management.</p>
+				</div>
+				</div>
+		</div>
+	</div>
 
-</body>
+	<div id="fh5co-work" class="fh5co-bg-dark">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Work</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center col-padding animate-box">
+					<div class="work">
+						<div class="desc" style="opacity: 1; padding: 20px;">
+							<h3>jobsearch</h3>
+							<p>A job pipeline: scheduled board search, LLM scoring and generated application packs.</p>
+							<p><strong>1,842</strong> automated checks</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center col-padding animate-box">
+					<div class="work">
+						<div class="desc" style="opacity: 1; padding: 20px;">
+							<h3>jobsearch-mobile</h3>
+							<p>The same product on Android, wrapped around the web app with a native bridge.</p>
+							<p><strong>12</strong> shipped builds</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center col-padding animate-box">
+					<div class="work">
+						<div class="desc" style="opacity: 1; padding: 20px;">
+							<h3>investintelligent</h3>
+							<p>An investment-intelligence portal: many news sources in, LLM analysis out, alerts and briefings.</p>
+							<p><strong>990</strong> automated checks</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center col-padding animate-box">
+					<div class="work">
+						<div class="desc" style="opacity: 1; padding: 20px;">
+							<h3>examcoach</h3>
+							<p>Exam preparation: papers and cheat sheets generated from a syllabus.</p>
+							<p><strong>75+</strong> automated checks</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center col-padding animate-box">
+					<div class="work">
+						<div class="desc" style="opacity: 1; padding: 20px;">
+							<h3>aiacademy</h3>
+							<p>Turns any topic into illustrated study notes with diagrams.</p>
+							<p><strong>225</strong> automated checks</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center col-padding animate-box">
+					<div class="work">
+						<div class="desc" style="opacity: 1; padding: 20px;">
+							<h3>MindCare</h3>
+							<p>A long-form chat companion with memory, summaries and safe fallbacks.</p>
+							<p><strong>319</strong> automated checks</p>
+						</div>
+					</div>
+				</div>
+				</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>Six shipped apps, <strong>3,450+</strong> automated checks in total.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+	<div id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>Ho Chi Lung &middot; Hong Kong, China &middot; <a href="mailto:clhoac@gmail.com" style="color: #2F3C4F; text-decoration: underline;">clhoac@gmail.com</a> &middot; <a href="tel:+85267070831" style="color: #2F3C4F; text-decoration: underline;">+852 67070831</a></p>
+					<p>&copy; 2026 Ho Chi Lung. Template by FreeHTML5.co.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#page" class="js-gotop" aria-label="Back to top"><i class="icon-arrow-up22" aria-hidden="true"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="js/jquery.easypiechart.min.js"></script>
+	
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	</body>
 </html>
+
