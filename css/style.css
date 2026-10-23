@@ -489,6 +489,33 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-bottom: 0;
   }
 }
+/* CR-0416: a section label is a heading, not a timeline event, so it leaves the rule and the
+   badges keep it. Above 992px the rule runs down the middle and every badge is centred on it
+   (`left:50%`), so the centred band put the label in the badge's own pixels: the band and the
+   badge were stacked on one axis by construction.
+
+   The label's row now has the band's own width instead of the timeline's full width — the row
+   is the heading, nothing else — capped at 45%, which stops it short of the badge's left edge
+   (47.9%) at any width. From 993px the band also leaves the line for the timeline's left text
+   edge, so it no longer shares an axis with the badges at all. Between 769px and 992px the
+   badge sits in the left gutter, not on the centre line, so the band stays centred exactly
+   where it was and only its row's box shrinks. At 768px and below the band already floats
+   clear of every badge and that layout is left as it was. */
+@media screen and (min-width: 769px) {
+  .timeline > li.timeline-heading {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 993px) {
+  .timeline > li.timeline-heading {
+    margin-left: 0;
+  }
+}
 .timeline > li {
   margin-bottom: 20px;
   position: relative;
