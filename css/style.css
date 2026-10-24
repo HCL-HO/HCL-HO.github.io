@@ -1470,3 +1470,103 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* CR-0423: the "Built With AI" band.
+   He asked for the areas — vaguely — and the workflow, not six project cards. So this band is a
+   two-column read, not a grid: the areas on the left, the process on the right, both in the page's
+   own ink on white. No cards, no icons, no shadows, no rules: tone and space only, so it cannot be
+   mistaken for the employer cards above it. */
+#fh5co-ai {
+  padding: 6em 0;
+  background: #fff;
+}
+#fh5co-ai .fh5co-heading p {
+  color: #4a3728;
+  font-size: 17px;
+  margin: 0;
+}
+#fh5co-ai .ai-body {
+  margin-top: 1em;
+}
+#fh5co-ai h3 {
+  font-size: 15px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #8a6a4a;
+  margin: 0 0 1.2em;
+  font-weight: 400;
+}
+#fh5co-ai .ai-areas,
+#fh5co-ai .ai-flow {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#fh5co-ai .ai-areas li {
+  color: #5b5b5b;
+  font-size: 15px;
+  line-height: 1.65;
+  padding: 0 0 1.1em;
+}
+#fh5co-ai .ai-areas li:last-child {
+  padding-bottom: 0;
+}
+#fh5co-ai .ai-areas strong {
+  color: #3f2f22;
+  font-weight: 400;
+  display: block;
+}
+#fh5co-ai .ai-flow {
+  counter-reset: ai-step;
+}
+#fh5co-ai .ai-flow li {
+  counter-increment: ai-step;
+  position: relative;
+  padding: 0 0 1.15em 2.1em;
+  color: #5b5b5b;
+  font-size: 15px;
+  line-height: 1.65;
+}
+#fh5co-ai .ai-flow li:last-child {
+  padding-bottom: 0;
+}
+/* Plain numerals, not badge chips: the page has no circular adornments anywhere and a
+   number in a disc would read as a component imported from elsewhere. */
+#fh5co-ai .ai-flow li::before {
+  content: counter(ai-step) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.1em;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #8a6a4a;
+}
+#fh5co-ai .ai-flow strong {
+  color: #3f2f22;
+  font-weight: 400;
+}
+#fh5co-ai .ai-total {
+  margin: 1.8em 0 0;
+  padding-top: 1.4em;
+  color: #8a6a4a;
+  font-size: 15px;
+  border-top: 0;
+}
+#fh5co-ai .ai-total strong {
+  color: #3f2f22;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-ai {
+    padding: 3em 0;
+  }
+  /* Stacked, the two columns need air between them: without this the process heading
+     sits on the last line of the areas list and reads as one run-on line. */
+  #fh5co-ai .ai-body > div + div > h3 {
+    margin-top: 3em;
+  }
+  #fh5co-ai .ai-flow {
+    margin-top: 0;
+  }
+}

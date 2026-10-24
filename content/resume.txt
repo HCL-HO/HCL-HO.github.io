@@ -1,0 +1,78 @@
+# Ho Chi Lung - Resume .pdf
+
+System Analyst | Backend Engineering & AI-Driven Solutions
+
+clhoac@gmail.com
+
++852 67070831
+
+Hong Kong, China
+
+## Summary
+
+System Analyst with 8+ years of backend engineering experience, currently bridging traditional banking systems (Java/Oracle) with emerging AI capabilities through a Master's in NLP. Strong track record of production stability, vendor management, and translating business pain points into technical roadmaps. Actively seeking to apply academic AI knowledge (NLP, transformers, recommendation systems) to solve real-world financial data and automation challenges.
+
+## EDUCATION
+
+2023 – 2025
+Polytechnic University of Hong Kong
+
+### Master of Science in Information Technology (Natural Language Processing)
+- Capstone Project: Fine-tuning with transfer learning, document searh with LSH, recommender system, image enhancement with computer vision technics
+2014
+Hong Kong University of Science and Technology
+
+### Bachelor of Science in Chemistry
+
+## EXPERIENCE
+
+Feb 2024 – Present
+HKBEA
+
+### System Analyst
+- Explored AI-driven log analysis: Conducted feasibility research on applying NLP-based anomaly detection to the OBDX platform's error logs, aiming to accelerate root-cause diagnosis. Proposed a proof-of-concept roadmap to senior management.
+- Data-driven incident prioritization: Leveraged SQL and basic data analytics to identify recurring system failure patterns, helping the team shift from reactive fire-fighting to targeted preventative fixes.
+- Acted as the technical bridge between business stakeholders and offshore/vendor teams, translating ambiguous user complaints into clear action plans and executive-level status reports.
+- Owned production stability for a 150,000+ user core banking system (Java Spring Boot + Oracle), reducing high-severity incidents through rapid manual root-cause analysis and permanent code fixes.
+Sep 2021 – Feb 2024
+EMSD (HK Government)
+
+### Contract Analyst Programmer
+- Led the full lifecycle of a Flutter mobile app (1,000+ users), using user analytics to identify needs and align features with business objectives.
+- Maintained an Android job management system, applying systematic testing and user feedback to enhance reliability.
+Jan 2021 – Sep 2021
+Property Raptor
+
+### Mobile Application Developer
+- Architected Android apps, implementing clean code and integrating third-party APIs.
+Apr 2019 – Sep 2020
+Hong Kong Post Office
+
+### Contract Analyst Programmer
+- Managed end-to-end project delivery for a 5,000-user reimbursement web app (Angular + Java), demonstrating business analysis and stakeholder management in a government context.
+- Coordinated critical system upgrades (e-cert, Octopus) across multiple departments.
+Sep 2018 – Apr 2019
+HK Asian Ark Ltd.
+
+### Analyst Programmer
+- Contributed to mobile MVP, UI revamp, and offshore collaboration.
+Nov 2017 – Sep 2018
+E-Business Solution Ltd.
+
+### Programmer
+- Developed mobile apps and researched React Native – self-directed learning applicable to modernisation.
+Nov 2016 – Jun 2017
+Department of Health
+
+### Contract Junior Programmer
+- Developed Java/PL-SQL modules for the e-Health System; prepared test plans and documentation.
+Jul 2015 – Sep 2016
+Hong Kong Airport Authority
+
+### Operation Officer (Customer Service)
+- Provided multinational customer service – strong communication and stakeholder handling skills.
+## SKILLS
+
+### NLP (Academic/Research)
+
+Python, Data Analysis (SQL), Java Spring Boot, Oracle DB, PL/SQL, REST APIs, Flutter, React Native, Android SDK, Angular, Vendor Management, Production Support, Agile/Scrum, Stakeholder Management

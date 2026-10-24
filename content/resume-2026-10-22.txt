@@ -1,0 +1,37 @@
+HO CHI LUNG
+Email: clhoac@gmail.com | Phone: +852 67070831 | Location: Hong Kong, China
+Summary
+System Analyst with 8+ years of backend engineering experience, bridging traditional banking systems (Java/Oracle) with AI through a Master’s in NLP. Proven in production stability, vendor management, and translating business pain points into technical roadmaps, with hands-on use of AI tools for reporting, statistics, progress tracking, and production troubleshooting. Seeking to apply NLP, transformers, and recommendation systems to financial data and automation challenges.
+Experience
+System Analyst | HKBEA | Feb 2024 – Present
+Used AI tools to generate reports and statistics for project management, task tracking, and statistical reporting, improved in reporting accuracy.
+Used AI tools to support progress tracking across projects, keeping stakeholders informed and ensuring 100% on-time project delivery.
+Used Copilot to analyze code and logs for production troubleshooting, speeding up root-cause analysis and permanent code fixes.
+Leveraged SQL and data analytics to identify recurring system failure patterns, shifting the team from reactive fire-fighting to targeted preventative fixes, reducing high-severity incidents by 90%.
+Acted as the technical bridge between business stakeholders and offshore/vendor teams, translating ambiguous user complaints into clear action plans and executive-level status reports.
+Owned production stability for a 150,000+ user core banking system reducing high-severity incidents through rapid root-cause analysis and permanent code fixes.
+Contract Analyst Programmer | EMSD (HK Government) | Sep 2021 – Feb 2024
+Led the full lifecycle of a Flutter mobile app (1,000+ users), using user analytics to identify needs and align features with business objectives
+Maintained an Android job management system, applying systematic testing and user feedback to enhance reliability, reducing crash rate by 40%.
+Mobile Application Developer | Property Raptor | Jan 2021 – Sep 2021
+Architected Android apps, implementing clean code and integrating third-party APIs
+Contract Analyst Programmer | Hong Kong Post Office | Apr 2019 – Sep 2020
+Managed end-to-end project delivery for a 5,000-user reimbursement web app (Angular + Java), demonstrating business analysis and stakeholder management in a government context
+Coordinated critical system upgrades (e-cert, Octopus) across multiple departments, ensuring seamless integration and 99.9% uptime.
+Analyst Programmer | HK Asian Ark Ltd. | Sep 2018 – Apr 2019
+Contributed to mobile MVP, UI revamp, and offshore collaboration, improved user satisfaction
+Programmer | E-Business Solution Ltd. | Nov 2017 – Sep 2018
+Developed mobile apps and researched React Native – self-directed learning applicable to modernisation, enabling faster prototyping of cross-platform solutions.
+Contract Junior Programmer | Department of Health | Nov 2016 – Jun 2017
+Developed Java/PL-SQL modules for the e-Health System; prepared test plans and documentation, ensuring compliance with government standards.
+Operation Officer (Customer Service) | Hong Kong Airport Authority | Jul 2015 – Sep 2016
+Provided multinational customer service – strong communication and stakeholder handling skills
+Skills
+NLP (Academic/Research), Python, Data Analysis (SQL), Java EE, Oracle DB, Mobile App, Vendor Management, Production Support, Agile/Scrum, Stakeholder Management
+Education
+Master of Science in Information Technology (Natural Language Processing)
+Polytechnic University of Hong Kong | 2023 – 2025
+Bachelor of Science in Chemistry
+Hong Kong University of Science and Technology | 2014
+Certifications
+PMP 2026
