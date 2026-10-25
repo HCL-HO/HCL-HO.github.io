@@ -1570,3 +1570,51 @@ input[type="text"] {
     margin-top: 0;
   }
 }
+
+/* ============================================================================
+   CR-0429 — the employer tiles DESCRIBE the system instead of showing its screen.
+
+   Measured before: all nine tiles put a screenshot in a 270 px `contain` box, so a
+   phone capture floated in white space at a fraction of the card; three of the nine
+   "screens" were organisation logos (EMSD, Department of Health, Hongkong Post) and
+   two were design-tool previews (JX App was a Sketch Mirror capture, Property Raptor
+   carried drawn review annotations). The band also said "Screens stay private" while
+   showing them.
+
+   Now each tile carries the project name, who it was for, and what the system does.
+   The row is a flex row so the cards on one line share a height whatever the copy
+   length; Bootstrap's own float and 3-up/1-up widths are kept, so the grid is the
+   template's, not a new one. Ink: #3f3428 on the white card is 11.0:1 and the meta
+   line #6f5f4d is 5.4:1, both measured on the rendered page. */
+/* CR-0429: the band's own <h2> was white on the beige field — measured 1.66:1 on
+   the rendered page, i.e. a section title a reader cannot read. Same correction
+   CR-0406 made for the Service band, and the same deep warm ink as the lead-in
+   below it, so the band keeps ONE ink. One declaration; revert it in a line if the
+   white title was the point. */
+#fh5co-work .fh5co-heading h2 { color: #4a3728 !important; }   /* the template ships
+   `.fh5co-bg-dark .fh5co-heading h2 { color: #fff !important }`; a later id-scoped
+   rule with `!important` is the only thing that beats it, `!important` included. */
+
+#fh5co-work .work-row { display: flex; flex-wrap: wrap; }
+#fh5co-work .work-row > .col-md-4 { float: none; display: flex; align-items: stretch; }
+#fh5co-work .work-row > .col-md-4 > .work-card { width: 100%; }
+
+.work-card--text { min-height: 290px; padding: 26px 24px 24px; }
+.work-card--text .desc {
+  display: block; -webkit-box-flex: 0; flex: 0 0 auto; height: auto; padding: 0;
+  text-align: left; -webkit-box-align: stretch; align-items: stretch;
+  -webkit-box-pack: start; justify-content: flex-start;
+}
+.work-card--text .desc h3 {
+  font-size: 19px; line-height: 1.32; margin: 0 0 6px; text-align: left;
+}
+.work-card--text .client {
+  margin: 0 0 14px; font-size: 12.5px; line-height: 1.4; color: #6f5f4d;
+}
+.work-card--text .what {
+  margin: 0; font-size: 15px; line-height: 1.55; color: #3f3428;
+}
+@media screen and (max-width: 480px) {
+  .work-card--text { min-height: 0; padding: 22px 18px 20px; }
+  .work-card--text .desc h3 { font-size: 18px; }
+}
