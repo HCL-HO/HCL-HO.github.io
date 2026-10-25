@@ -1584,18 +1584,21 @@ input[type="text"] {
    Now each tile carries the project name, who it was for, and what the system does.
    The row is a flex row so the cards on one line share a height whatever the copy
    length; Bootstrap's own float and 3-up/1-up widths are kept, so the grid is the
-   template's, not a new one. Ink: #3f3428 on the white card is 11.0:1 and the meta
-   line #6f5f4d is 5.4:1, both measured on the rendered page. */
-/* CR-0429: the band's own <h2> was white on the beige field — measured 1.66:1 on
-   the rendered page, i.e. a section title a reader cannot read. Same correction
-   CR-0406 made for the Service band, and the same deep warm ink as the lead-in
-   below it, so the band keeps ONE ink. One declaration; revert it in a line if the
-   white title was the point. */
-#fh5co-work .fh5co-heading h2 { color: #000 !important; }   /* black, at his word
-   ("the work heading ink is bad, use black instead") — 10.0:1 on the beige field,
-   against 1.68:1 for the template's white. The template ships
-   `.fh5co-bg-dark .fh5co-heading h2 { color: #fff !important }`, so an id-scoped
-   `!important` is the only thing that beats it. */
+   template's, not a new one. Ink since r6 is black — see the note below. */
+/* CR-0429 r6 — BLACK, ON HIS WORD, BECAUSE THE SITE KEEPS ONE INK.
+   His words: "the color change back to black because the color theme should be
+   consistent across the website". The band's <h2> was white on the beige field
+   (1.68:1 measured, a section title a reader cannot read); the card copy was a warm
+   brown I invented for this band (#3f3428 body, #6f5f4d meta) — a second ink that
+   appears nowhere else. So all of it is black now:
+     h2 and lead-in  #000 on the beige field   10.0:1
+     card body       #000 on the white card    21.0:1 at 15px
+     card meta       #4d4d4d, the site's own body grey, kept quieter than the body
+   The template ships `.fh5co-bg-dark .fh5co-heading h2 { color: #fff !important }`,
+   so the heading needs an id-scoped `!important` to beat it; the rest are plain
+   declarations. */
+#fh5co-work .fh5co-heading h2,
+#fh5co-work .fh5co-heading p { color: #000 !important; }
 
 #fh5co-work .work-row { display: flex; flex-wrap: wrap; }
 #fh5co-work .work-row > .col-md-4 { float: none; display: flex; align-items: stretch; }
@@ -1611,10 +1614,10 @@ input[type="text"] {
   font-size: 19px; line-height: 1.32; margin: 0 0 6px; text-align: left;
 }
 .work-card--text .client {
-  margin: 0 0 14px; font-size: 12.5px; line-height: 1.4; color: #6f5f4d;
+  margin: 0 0 14px; font-size: 12.5px; line-height: 1.4; color: #4d4d4d;
 }
 .work-card--text .what {
-  margin: 0; font-size: 15px; line-height: 1.55; color: #3f3428;
+  margin: 0; font-size: 15px; line-height: 1.55; color: #000;
 }
 @media screen and (max-width: 480px) {
   .work-card--text { min-height: 0; padding: 22px 18px 20px; }
