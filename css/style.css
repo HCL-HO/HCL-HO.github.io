@@ -1591,9 +1591,11 @@ input[type="text"] {
    CR-0406 made for the Service band, and the same deep warm ink as the lead-in
    below it, so the band keeps ONE ink. One declaration; revert it in a line if the
    white title was the point. */
-#fh5co-work .fh5co-heading h2 { color: #4a3728 !important; }   /* the template ships
-   `.fh5co-bg-dark .fh5co-heading h2 { color: #fff !important }`; a later id-scoped
-   rule with `!important` is the only thing that beats it, `!important` included. */
+#fh5co-work .fh5co-heading h2 { color: #000 !important; }   /* black, at his word
+   ("the work heading ink is bad, use black instead") — 10.0:1 on the beige field,
+   against 1.68:1 for the template's white. The template ships
+   `.fh5co-bg-dark .fh5co-heading h2 { color: #fff !important }`, so an id-scoped
+   `!important` is the only thing that beats it. */
 
 #fh5co-work .work-row { display: flex; flex-wrap: wrap; }
 #fh5co-work .work-row > .col-md-4 { float: none; display: flex; align-items: stretch; }
