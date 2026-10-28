@@ -1,3 +1,6 @@
 
 # design-taste-frontend inspector artifacts (screenshots, report.json) — evidence, not source
 .taste-skill/
+# Lily Leung's page is a SEPARATE repository (CR-0445). Her code must never
+# appear in Eric's repo or its remote: this line is what keeps the two apart.
+lily-leung/
